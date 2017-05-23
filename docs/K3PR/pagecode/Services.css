@@ -1,0 +1,61 @@
+
+
+
+/* ------------------------ MENU ---------------------------- */
+
+#menu {
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    top: 0;
+    background: #99ebff;
+}
+
+.menuitem { 
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 5px;
+    color: white;
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+}
+
+.menuitem:hover {
+    color: #00a3cc;
+}
+
+#subservices {
+    position:absolute;
+    top: 9vh;
+    right: 14vw;
+    text-align: center;
+    background: #99ebff;
+    font-family: "Tomaha", sans-serif;
+    z-index: 4;
+    display: none;
+    transition: display ease-in-out;
+    text-decoration: none;
+}
+
+#abset:hover #subabout{
+    display: block;
+}
+
+#servset:hover #subservices{
+    display: block;
+}
+
+#subabout {
+    text-decoration: none;
+    position:absolute;
+    top: 0vh;
+    width: 9vw;
+    right: 8vw;
+    text-align: center;
+    background: #99ebff;
+    font-family: "Tomaha", sans-serif;
+    z-index: 15;
+    transition: display ease-in-out;
+    display: none;
+}
