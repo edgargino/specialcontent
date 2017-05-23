@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+h1, p{
+    font-family: Helvetica, sans-serif;
+}
+
+/* ------------------------ MENU ---------------------------- */
+
+#menu {
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    top: 0;
+    background: #99ebff;
+    z-index: 100;
+}
+
+.menuitem { 
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 5px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.menuitem:hover {
+    color: #00a3cc;
+}
+
+#subservices {
+    position:absolute;
+    top: 9vh;
+    right: 14vw;
+    text-align: center;
+    background: #99ebff;
+    font-family: HELVETICA, sans-serif;
+    z-index: 4;
+    display: none;
+    text-decoration: none;
+}
+
+#abset:hover #subabout{
+    display: block;
+}
+
+#servset:hover #subservices{
+    display: block;
+}
+
+#subabout {
+    text-decoration: none;
+    position:absolute;
+    top: 0vh;
+    width: 9vw;
+    right: 8vw;
+    text-align: center;
+    background: #99ebff;
+    font-family: "Tomaha", sans-serif;
+    z-index: 15;
+    transition: display ease-in-out;
+    display: none;
+}
+
+
+/* ------------------- MIDDLE ANIMATION -------------------- */
+
+
+  @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+.bottom {
+    width: inherit;
+}
+
+.top {
+    position: absolute;
+    z-index:3;
+    width: inherit;
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+
+#cf3 {
+    width: 80vw;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/*------------------------- FOOTER ------------------------------*/
+
+#footer {
+    width: 100%;
+    background:#1a1a1a;
+    height: 50px;
+    color: #afafaf;
+    text-align: center;
+}
+
+#social {
+    position: absolute;
+    bottom: 10px;
+    right:25px;
+    z-index:11;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 22px;
+    color: white;
+}
+
+/*---------------------- GENERAL WRITINGS -----------------------*/
+
+.writing {
+    width: 80vw;
+    margin: auto;
+    margin-top:10vh;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    border-top: 2px solid #99ebff;
+    border-bottom: 2px solid #99ebff;
+    text-align: center;
+    font-weight: bold;
+    margin: 2vw;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+
+
+
+/*-----------------------   ABOUT PAGE  ----------------------*/
+
+.writing{
+    display: block;
+    width:90vw;
+}
+
+#animid {
+    width: 90vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+    position: relative;
+    border: 2px solid red;
+}
+
+.letterbox {
+    width: 20%;
+    height: 100%;
+    margin-left:2.1%;
+    margin-right:2.1%;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover {
+    background: white;
+    display:block;
+    margin:auto;
+    opacity:0;
+    height: inherit;
+    transition: opacity 1s ease-in-out;
+    transition-delay: .5s;
+    -o-transition: opacity 1s ease-in-out;
+    -o-transition-delay: .5s;
+    -moz-transition: opacity 1s ease-in-out;
+    -moz-transition-delay: .5s;
+    -webkit-transition: opacity 1s ease-in-out;
+    -webkit-transition-delay: .5s 
+}
+
+.cover:hover {
+    opacity: 1;
+}
